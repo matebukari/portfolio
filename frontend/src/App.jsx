@@ -1,7 +1,10 @@
+import Background from "./components/background/Background";
+
 function App() {
   return (
-    <div></div>
-  )
+    <Background> 
+    </Background>
+  );
 }
 
-export default App
+export default App;
