@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <nav
-      className="fixed top-2 left-1/2 transform -translate-x-1/2 w-[calc(100%-10rem)] max-w-full z-10 rounded-xl overflow-hidden bg-black-400/50 backdrop-blur-[3px] border border-neutral-400/20"
+      className="fixed top-2 left-1/2 transform -translate-x-1/2 w-[calc(100%-10rem)] max-w-full z-20 rounded-xl overflow-hidden bg-black-400/50 backdrop-blur-[3px] border border-neutral-400/20"
     >
       <div className="w-full px-6 h-16 flex items-center justify-between">
 

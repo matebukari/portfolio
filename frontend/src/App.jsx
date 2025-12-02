@@ -1,15 +1,15 @@
 import Background from "./components/background/Background";
 import Navbar from "./components/ui/Navbar";
+import Hero from "./components/sections/Hero";
+import About from "./components/sections/About";
 
 function App() {
   return (
     <Background>
       <Navbar />
 
-      {/* Example content */}
-      <div className="pt-24 text-white text-6xl font-bold text-center">
-        Hero Section Placeholder
-      </div>
+      <Hero/>
+      <About/>
     </Background>
   );
 }
