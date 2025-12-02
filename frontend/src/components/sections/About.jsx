@@ -29,16 +29,17 @@ const About = () => {
         {/* Content Paragraph */}
         <div className="rounded-xl bg-black-100/50 backdrop-blur-[3px] border border-neutral-400/20">
           <p className="max-w-full mx-auto text-lg text-gray-300 leading-relaxed m-2 py-8 px-5">
-            Hello, I'm <span className="font-bold text-purple-400">Bukari Máté</span>, a highly motivated 
-            and curious aspiring Full-Stack Developer focused on building user-friendly,
-            scalable web applications. My technical foundation comes from the Codecool Full-Stack Developer Bootcamp,
-            where I gained hands-on experience with JavaScript (ES6+), React, Node.js, Express.js, and MongoDB.
-            <p></p>
-            I thrive in collaborative, problem-solving environments.
-            With a professional background in system administration and customer-facing roles,
-            I bring essential soft skills like adaptability, strong communication,
-            and teamwork to a professional development team.
-            I am eager to contribute to innovative projects and continue developing my skills within the tech industry.
+            Hello, I'm <span className="font-bold text-purple-400">Bukari Máté</span>, and I'm a passionate
+            and aspiring Full-Stack Developer excited about building user-friendly, scalable web applications.
+
+            My technical foundation comes from the Codecool Bootcamp, where I gained a solid,
+            hands-on understanding of key technologies like JavaScript, React, Node.js, Express.js, and MongoDB.
+            I’m dedicated to continuous self-learning, so I'm always expanding my skillset.
+
+            I thrive in collaborative environments, and I'm comfortable working in teams and leveraging Git
+            for smooth project management. My previous professional roles also taught me valuable soft skills 
+            like strong communication and adaptability, which I’m eager to bring to a professional development team.
+            Let's build something innovative together!
           </p>
         </div>
 
