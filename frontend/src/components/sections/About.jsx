@@ -1,25 +1,5 @@
 import { Download, Eye, Code, Globe } from 'lucide-react'; 
-
-// Component for the individual stat card
-const StatCard = ({ icon: Icon, title, count, description }) => (
-  <div className="bg-gray-900/50 p-6 rounded-xl border border-purple-800/50 backdrop-blur-sm shadow-2xl transition duration-300 hover:scale-[1.02] hover:bg-gray-800/50 cursor-pointer w-full md:w-[30%]">
-    <div className="flex items-start justify-between">
-      <Icon className="text-purple-400 w-8 h-8" />
-      <span className="text-5xl font-extrabold text-white">{count}</span>
-    </div>
-    
-    <div className="mt-4">
-        <h3 className="text-sm font-semibold text-gray-400 uppercase">{title}</h3>
-        <p className="text-xs text-gray-500 mt-1">{description}</p>
-    </div>
-
-    {/* Small arrow icon at the bottom right */}
-    <span className="absolute bottom-4 right-4 text-purple-600">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17L17 7"/></svg>
-    </span>
-  </div>
-);
-
+import StatCard from '../ui/StatCard';
 
 const About = () => {
   const stats = [
@@ -49,7 +29,7 @@ const About = () => {
         {/* Content Paragraph */}
         <div className="rounded-xl bg-black-100/50 backdrop-blur-[3px] border border-neutral-400/20">
           <p className="max-w-full mx-auto text-lg text-gray-300 leading-relaxed m-2 py-8 px-5">
-            Hello, I'm <span className="font-bold text-purple-400">Bukari Máté</span> , a highly motivated 
+            Hello, I'm <span className="font-bold text-purple-400">Bukari Máté</span>, a highly motivated 
             and curious aspiring Full-Stack Developer focused on building user-friendly,
             scalable web applications. My technical foundation comes from the Codecool Full-Stack Developer Bootcamp,
             where I gained hands-on experience with JavaScript (ES6+), React, Node.js, Express.js, and MongoDB.
