@@ -27,7 +27,7 @@ const About = () => {
         </h2>
         
         {/* Content Paragraph */}
-        <div className="rounded-xl bg-black-100/50 backdrop-blur-[3px] border border-neutral-400/20">
+        <div className="rounded-xl bg-black/10 backdrop-blur-[3px] border border-neutral-400/20">
           <p className="max-w-full mx-auto text-lg text-gray-300 leading-relaxed m-2 py-8 px-5">
             Hello, I'm <span className="font-bold text-purple-400">Bukari Máté</span>, and I'm a passionate
             and aspiring Full-Stack Developer excited about building user-friendly, scalable web applications.

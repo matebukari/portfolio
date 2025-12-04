@@ -1,6 +1,6 @@
 // Component for the individual stat cards
 const StatCard = ({ icon: Icon, title, count, description }) => (
-  <div className="bg-black-100/50 backdrop-blur-[3px] p-6 rounded-xl border border-purple-800/50 shadow-2xl transition duration-300 hover:scale-[1.02] hover:bg-gray-800/50 cursor-pointer w-full md:w-[30%]">
+  <div className=" bg-black/10 backdrop-blur-[3px] border border-neutral-400/20 p-6 rounded-xl shadow-2xl transition duration-300 hover:scale-[1.02] hover:bg-gray-800/50 cursor-pointer w-full md:w-[30%]">
     <div className="flex items-start justify-between">
       <Icon className="text-purple-400 w-8 h-8" />
       <span className="text-5xl font-extrabold text-white">{count}</span>
