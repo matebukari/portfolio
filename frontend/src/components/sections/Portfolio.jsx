@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ExternalLink, ArrowRight, Code, Zap } from 'lucide-react';
 import StreamScopeImage from '../../assets/images/StreamScope-screenshot.png'; 
 
