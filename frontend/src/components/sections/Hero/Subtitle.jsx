@@ -13,6 +13,8 @@ export default function Subtitle({
   parentClassName = '',
   encryptedClassName = '',
   animateOn = 'hover',
+  pauseDuration = 3000,
+  children,             
   ...props
 }) {
   // Turn children/text into an array of strings
@@ -42,7 +44,7 @@ export default function Subtitle({
   const [hasAnimated, setHasAnimated] = useState(false);
 
   const containerRef = useRef(null);
-  const pauseTimeoutRef = useRef(null); // track pause timeout
+  const pauseTimeoutRef = useRef(null);
 
   // Whenever the active text changes, reset state for a fresh animation
   useEffect(() => {
@@ -142,7 +144,7 @@ export default function Subtitle({
         // loop back to first when reaching the last
         setCurrentIndex(prevIndex => {
           if (texts.length === 0) return 0;
-          return (prevIndex + 1) % texts.length; // <-- looping here
+          return (prevIndex + 1) % texts.length;
         });
       }, pauseDuration);
     };
