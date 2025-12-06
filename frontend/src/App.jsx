@@ -1,6 +1,6 @@
 import Background from "./components/background/Background";
 import Navbar from "./components/ui/Navbar";
-import Hero from "./components/sections/Hero";
+import Hero from "./components/sections/Hero/Hero.jsx";
 import About from "./components/sections/About";
 import Portfolio from "./components/sections/Portfolio";
 import ContactSection from "./components/sections/Contact";

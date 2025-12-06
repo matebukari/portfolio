@@ -1,6 +1,11 @@
 import Lottie from 'react-lottie';
-import animationData from '../../assets/animations/HeroAnimation.json';
-import { Github, Linkedin, ExternalLink, Mail } from 'lucide-react'; 
+import animationData from '../../../assets/animations/HeroAnimation.json';
+import { Github, Linkedin, ExternalLink, Mail } from 'lucide-react';
+import MainTitle from './MainTitle';
+import Subtitle from './Subtitle';
+  
+
+
 
 // Lottie Options
 const defaultOptions = {
@@ -27,18 +32,29 @@ const Hero = () => {
         <div className="md:w-1/2 space-y-6 text-center md:text-left">
 
           {/* 1. Main Title */}
-          <h1 className="text-6xl sm:text-8xl font-extrabold leading-none">
-            <span className="block text-white">Full Stack</span>
-            {/* Developer with Purple Gradient */}
-            <span className="block text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-blue-400">
-              Developer
-            </span>
-          </h1>
+          <MainTitle
+            className="scrambled-text-demo"
+            radius={30}
+            duration={1.2}
+            speed={0.5}
+            scrambleChars={`.:`}
+          />  
 
           {/* 2. Subtitle / Tagline */}
-          <p className="text-2xl text-white font-light tracking-wide pt-2">
-            Tech Enthusiast
-          </p>
+          <Subtitle
+            animateOn="view"
+            revealDirection="left"
+            sequential
+            className="text-lg text-white"
+            encryptedClassName="text-lg text-cyan-400"
+            pauseDuration={2500}
+          >
+            {[
+              'This text animates when in view',
+              'Then this text shows after the first',
+              'And finally this one appears last'
+            ]}
+          </Subtitle>
 
           {/* 3. Description */}
           <p className="text-lg text-gray-400 max-w-lg pt-4">
