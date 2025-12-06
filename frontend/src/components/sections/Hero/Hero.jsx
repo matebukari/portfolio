@@ -3,9 +3,6 @@ import animationData from '../../../assets/animations/HeroAnimation.json';
 import { Github, Linkedin, ExternalLink, Mail } from 'lucide-react';
 import MainTitle from './MainTitle';
 import Subtitle from './Subtitle';
-  
-
-
 
 // Lottie Options
 const defaultOptions = {
@@ -50,15 +47,15 @@ const Hero = () => {
             pauseDuration={2500}
           >
             {[
-              'This text animates when in view',
-              'Then this text shows after the first',
-              'And finally this one appears last'
+              'I design software that solves real-world problems',
+              'Building modern web apps from concept to deploy',
+              'Turning complex problems into intuitive digital experiences'
             ]}
           </Subtitle>
 
           {/* 3. Description */}
           <p className="text-lg text-gray-400 max-w-lg pt-4">
-            Enhancing digital experiences that are smooth, scalable, and made to impress.
+            Empowering ideas with code that’s efficient, secure, and ready to grow.
           </p>
 
           {/* 4. CTA Buttons */}
