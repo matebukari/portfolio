@@ -1,7 +1,7 @@
 import { Code, Globe } from 'lucide-react';
 import { motion } from "motion/react";
 
-const AboutStatCard = () => {
+const AboutStatCards = () => {
   const stats = [
     { 
       icon: Code, 
@@ -77,4 +77,4 @@ const AboutStatCard = () => {
   );
 };
 
-export default AboutStatCard;
+export default AboutStatCards;

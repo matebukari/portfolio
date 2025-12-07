@@ -1,4 +1,4 @@
-import AboutStatCard from '../../ui/AboutStatCard';
+import AboutStatCards from '../../ui/AboutStatCards';
 import AboutTitle from './AboutTitle';
 import AboutMeDescription from './AboutMeDescription';
 import AboutDownloadCvButton from '../../ui/AboutDownloadCvButton';
@@ -26,7 +26,7 @@ const About = () => {
         </div>
 
         {/* Statistics Cards */}
-        <AboutStatCard/>
+        <AboutStatCards/>
         
       </div>
     </section>
