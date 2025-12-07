@@ -5,7 +5,7 @@ import { ScrambleTextPlugin } from 'gsap/ScrambleTextPlugin';
 
 gsap.registerPlugin(SplitText, ScrambleTextPlugin);
 
-const MainTitle = ({
+const HeroTitle = ({
   radius = 100,
   duration = 1.2,
   speed = 0.5,
@@ -72,4 +72,4 @@ const MainTitle = ({
   );
 };
 
-export default MainTitle;
+export default HeroTitle;

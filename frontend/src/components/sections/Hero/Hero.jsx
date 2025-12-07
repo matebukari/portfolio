@@ -1,8 +1,8 @@
 import Lottie from 'react-lottie';
 import animationData from '../../../assets/animations/HeroAnimation.json';
 import { Github, Linkedin, ExternalLink, Mail } from 'lucide-react';
-import MainTitle from './MainTitle';
-import Subtitle from './Subtitle';
+import HeroTitle from './HeroTitle';
+import HeroSubTitle from './HeroSubtitle';
 
 // Lottie Options
 const defaultOptions = {
@@ -22,14 +22,14 @@ const socialLinks = [
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center p-4 overflow-hidden text-white">
+    <section className="relative h-screen flex items-center justify-center p-4 overflow-hidden text-white">
 
       <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 py-20">
         {/* Left Content Area */}
         <div className="md:w-1/2 space-y-6 text-center md:text-left">
 
           {/* 1. Main Title */}
-          <MainTitle
+          <HeroTitle
             className="scrambled-text-demo"
             radius={30}
             duration={1.2}
@@ -38,7 +38,7 @@ const Hero = () => {
           />  
 
           {/* 2. Subtitle / Tagline */}
-          <Subtitle
+          <HeroSubTitle
             animateOn="view"
             revealDirection="left"
             sequential
@@ -51,7 +51,7 @@ const Hero = () => {
               'Building modern web apps from concept to deploy',
               'Turning complex problems into intuitive digital experiences'
             ]}
-          </Subtitle>
+          </HeroSubTitle>
 
           {/* 3. Description */}
           <p className="text-lg text-gray-400 max-w-lg pt-4">

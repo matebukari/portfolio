@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { motion } from 'motion/react';
 
-export default function Subtitle({
+export default function HeroSubtitle({
   text,
   speed = 50,
   maxIterations = 10,
