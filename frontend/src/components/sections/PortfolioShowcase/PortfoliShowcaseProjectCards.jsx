@@ -20,7 +20,7 @@ const projectData = [
   },
 ];
 
-// 2. Single Project Card (now animated)
+// 2. Single Project Card
 const ProjectCard = ({
   title,
   description,

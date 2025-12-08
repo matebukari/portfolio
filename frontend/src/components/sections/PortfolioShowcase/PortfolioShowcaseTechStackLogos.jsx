@@ -1,40 +1,61 @@
 import { motion } from "motion/react";
+import HtmlLogo from "../../../assets/techLogos/html.svg";
+import CssLogo from "../../../assets/techLogos/css.svg";
+import JavascriptLogo from "../../../assets/techLogos/javascript.svg";
+import TailwindLogo from "../../../assets/techLogos/tailwind.svg";
+import ExpressJsLogo from "../../../assets/techLogos/expressjs.svg";
+import NodeJsLogo from "../../../assets/techLogos/nodejs.svg";
+import ReactLogo from "../../../assets/techLogos/react.svg";
+import MongoDBLogo from "../../../assets/techLogos/mongodb.svg";
+import JavaLogo from "../../../assets/techLogos/java.svg";
+import GitLogo from "../../../assets/techLogos/git.svg";
 
 const techStackData = [
-  { name: 'HTML', logoSrc: '/logos/html.svg' },
-  { name: 'CSS', logoSrc: '/logos/css.svg' },
-  { name: 'JavaScript', logoSrc: '/logos/javascript.svg' },
-  { name: 'Tailwind CSS', logoSrc: '/logos/tailwind.svg' },
-  { name: 'Express JS', logoSrc: '/logos/express.svg' },
-  { name: 'Node JS', logoSrc: '/logos/nodejs.svg' },
-  { name: 'React', logoSrc: '/logos/react.svg' },
-  { name: 'MongoDB', logoSrc: '/logos/mongodb.svg' },
-  { name: 'Java', logoSrc: '/logos/java.svg' },
-  { name: 'Git', logoSrc: '/logos/jwt.svg' },
+  { name: 'HTML', logoSrc: HtmlLogo },
+  { name: 'CSS', logoSrc: CssLogo },
+  { name: 'JavaScript', logoSrc: JavascriptLogo },
+  { name: 'Tailwind CSS', logoSrc: TailwindLogo },
+  { name: 'Express JS', logoSrc: ExpressJsLogo },
+  { name: 'Node JS', logoSrc: NodeJsLogo },
+  { name: 'React', logoSrc: ReactLogo },
+  { name: 'MongoDB', logoSrc: MongoDBLogo },
+  { name: 'Java', logoSrc: JavaLogo },
+  { name: 'Git', logoSrc: GitLogo },
 ];
 
 const LogoCard = ({ name, logoSrc, index }) => {
   return (
     <motion.div
-      initial={{ scale: 0.6, opacity: 0 }}
+      initial={{ scale: 0.4, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
       viewport={{ once: false, amount: 0.2 }}
       transition={{
         type: "spring",
         stiffness: 120,
         damping: 12,
-        delay: index * 0.05,
+        delay: index * 0.02,
       }}
       className="will-change-transform flex flex-col items-center justify-center p-4 rounded-xl transition duration-300 hover:scale-[1.05] group"
     >
-      <div className="w-24 h-24 p-10 rounded-2xl flex items-center justify-center 
-                      bg-black/10 backdrop-blur-[3px] shadow-2xl bg-opacity-90 border-2 border-transparent 
-                      group-hover:border-purple-500/80 transition duration-200">
-        <img src={logoSrc} alt={`${name} logo`} className="w-full h-full object-contain filter drop-shadow-lg" />
+      {/* Box with backlight on hover */}
+      <div className="relative w-28 h-32 rounded-2xl flex items-center justify-center">
+
+        {/* Backlight glow (behind) */}
+        <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 
+                     blur-xl transition-opacity duration-300 
+                     bg-linear-to-br from-purple-500/40 via-fuchsia-500/30 to-cyan-400/30"
+            aria-hidden="true"
+        />
+
+        <div className="w-30 h-30 p-5 rounded-2xl flex flex-col items-center justify-center 
+                        bg-black/10 backdrop-blur-[3px] shadow-2xl bg-opacity-90 border border-neutral-400/50
+                        group-hover:border-purple-500/80 transition duration-200">
+          <img src={logoSrc} alt={`${name} logo`} className="w-14 h-14 object-contain filter drop-shadow-lg " />
+          <p className="text-sm font-semibold text-gray-300 group-hover:text-white transition duration-200">
+            {name}
+          </p>
+        </div>
       </div>
-      <p className="mt-3 text-sm font-semibold text-gray-300 group-hover:text-white transition duration-200">
-        {name}
-      </p>
     </motion.div>
   );
 };
