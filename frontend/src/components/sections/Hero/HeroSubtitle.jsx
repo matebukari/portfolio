@@ -249,6 +249,18 @@ export default function HeroSubtitle({
 
   return (
     <motion.span
+      initial={{
+          y: 50,
+          opacity: 0,
+        }}
+        whileInView={{ x: 0, y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{
+          type: "tween",
+          duration: 0.3,
+          ease: "easeOut",
+          delay: 0.3
+        }}
       ref={containerRef}
       className={`inline-block whitespace-pre-wrap ${parentClassName}`}
       {...hoverProps}

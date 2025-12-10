@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { SplitText } from 'gsap/SplitText';
 import { ScrambleTextPlugin } from 'gsap/ScrambleTextPlugin';
+import { motion } from 'framer-motion';
 
 gsap.registerPlugin(SplitText, ScrambleTextPlugin);
 
@@ -62,13 +63,24 @@ const HeroTitle = ({
   }, [radius, duration, speed, scrambleChars]);
 
   return (
-    <div
+    <motion.div
+      initial={{
+          y: 50,
+          opacity: 0,
+        }}
+        whileInView={{ x: 0, y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{
+          type: "tween",
+          duration: 0.3,
+          ease: "easeOut",
+        }}
       ref={rootRef}
       className={`font-extrabold text-7xl ${className}`}
       style={style}
     >
       <p>Full Stack Developer</p>
-    </div>
+    </motion.div>
   );
 };
 

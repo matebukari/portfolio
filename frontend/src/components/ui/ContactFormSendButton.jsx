@@ -3,12 +3,12 @@ import { motion } from 'motion/react';
 
 const iconVariants = {
   rest: { rotate: 0 },
-  hover: { rotate: 405 }, // Full spinning effect
+  hover: { rotate: 405 },
 };
 
 const buttonVariants = {
   rest: { scale: 1 },
-  hover: { scale: 1.04 }, // Slight grow on hover
+  hover: { scale: 1.04 },
 };
 
 const ContactFormSendButton = () => {
