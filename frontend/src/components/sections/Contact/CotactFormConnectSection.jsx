@@ -2,8 +2,8 @@ import { Linkedin, Github } from 'lucide-react';
 import ContactFormSocialLinkCard from "../../ui/ContactFormSocialLinkCard";
 
 const socialLinks = [
-  { name: 'Let\'s Connect', subtext: 'on LinkedIn', icon: Linkedin, url: 'YOUR_LINKEDIN_URL', color: 'text-blue-500' },
-  { name: 'GitHub', subtext: '@YourUsername', icon: Github, url: 'YOUR_GITHUB_URL', color: 'text-gray-400' }, 
+  { name: 'Let\'s Connect', subtext: 'on LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/mate-bukari', color: 'text-blue-500' },
+  { name: 'GitHub', subtext: '@matebukari', icon: Github, url: 'https://github.com/matebukari', color: 'text-gray-400' }, 
 ];
 
 const CotactFormConnectSection = () => {
