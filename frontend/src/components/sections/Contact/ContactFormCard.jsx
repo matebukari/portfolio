@@ -6,14 +6,7 @@ import { motion } from 'framer-motion';
 const ContactFormCard = () => {
 
   return (
-    <div className="p-6 w-full max-w-2xl sm:p-10 rounded-2xl border border-neutral-400/10 
-                    bg-black/10 backdrop-blur-[3px] shadow-2xl relative">
-        
-      {/* HEADER */}
-      <ContactFormHeader/>
-
-      {/* FORM FIELDS and Send Message Button */}
-      <motion.div
+    <motion.div
         initial={{
           x: -30,
           opacity: 0,
@@ -26,15 +19,22 @@ const ContactFormCard = () => {
           ease: "easeOut",
         }}
       >
-        <ContactFormFields/>
-      </motion.div>
-      
-      {/* --- HORIZONTAL RULE --- */}
-      <hr className="my-10 border-white/10" />
+      <div className="p-6 w-full max-w-2xl sm:p-10 rounded-2xl border border-neutral-400/10 
+                      bg-black/10 backdrop-blur-[3px] shadow-2xl relative">
+          
+        {/* HEADER */}
+        <ContactFormHeader/>
 
-      {/* CONNECT WITH ME SECTION */}
-      <CotactFormConnectSection/>
-    </div>
+        {/* FORM FIELDS and Send Message Button */}
+        <ContactFormFields/>
+        
+        {/* --- HORIZONTAL RULE --- */}
+        <hr className="my-10 border-white/10" />
+
+        {/* CONNECT WITH ME SECTION */}
+        <CotactFormConnectSection/>
+      </div>
+    </motion.div>
   )
 }
 
