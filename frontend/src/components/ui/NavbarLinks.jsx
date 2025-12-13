@@ -23,7 +23,7 @@ const NavbarLinks = ({ isScrolled }) => {
       },
       {
         root: null,
-        rootMargin: "-40% 0px -40% 0px", // section is "active" near center
+        rootMargin: "-40% 0px -40% 0px",
         threshold: 0,
       }
     );

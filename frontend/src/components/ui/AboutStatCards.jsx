@@ -7,7 +7,7 @@ const AboutStatCards = () => {
       icon: Code, 
       title: 'TOTAL PROJECTS', 
       count: '1', 
-      description: 'Innovative web & mobile solutions crafted' 
+      description: 'Innovative web & mobile solutions crafted'
     },
     { 
       icon: Globe, 
@@ -20,8 +20,9 @@ const AboutStatCards = () => {
   return (
     <div className="flex flex-wrap justify-center gap-6">
       {stats.map((stat, index) => (
-        <motion.div
+        <motion.a
           key={index}
+          href="#projects"
           initial={{
             x: index === 0 ? -30 : 30,
             y: 30,
@@ -71,7 +72,7 @@ const AboutStatCards = () => {
               <path d="M7 17L17 7" />
             </svg>
           </span>
-        </motion.div>
+        </motion.a>
       ))}
     </div>
   );
