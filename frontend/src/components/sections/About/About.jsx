@@ -7,7 +7,7 @@ import AboutViewProjectsButton from '../../ui/AboutViewProjectsButton';
 const About = () => {
   
   return (
-    <section className="relative py-4 px-8 text-white">
+    <section id='about' className="relative py-4 px-8 text-white">
       <div className="relative z-10 max-w-6xl mx-auto text-center">
 
         {/* Title */}

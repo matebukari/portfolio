@@ -9,7 +9,7 @@ const PortfolioShowcase = () => {
   const [activeTab, setActiveTab] = useState('projects'); 
 
   return (
-    <section className="relative py-20 px-8 overflow-hidden text-white">
+    <section id='projects' className="relative py-20 px-8 overflow-hidden text-white">
       <div className="relative z-10 max-w-7xl mx-auto text-center">
 
         {/* Title */}

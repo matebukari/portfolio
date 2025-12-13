@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav
       className={`
         fixed top-2 left-1/2 transform -translate-x-1/2
-        z-20 rounded-xl overflow-hidden 
+        z-20 rounded-xl overflow-hidden
         bg-black/10 backdrop-blur-[3px] border border-neutral-400/20
         transition-all duration-300
         ${scrolled ? "w-3/5" : "w-5/6"}
