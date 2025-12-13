@@ -1,4 +1,5 @@
 import { ExternalLink, ArrowRight, Code } from 'lucide-react';
+import { Link } from "react-router-dom";
 import { motion } from 'motion/react';
 import StreamScopeImage from '../../../assets/images/StreamScope-screenshot.png'; 
 
@@ -9,14 +10,14 @@ const projectData = [
     description: `StreamScope helps you find movies and TV shows and see exactly where they’re streaming in your country.`,
     image: StreamScopeImage,
     demoLink: 'https://stream-scope.netlify.app/',
-    detailsLink: '#',
+    slug: 'streamscope',
   },
   {
     title: 'ScoreMyChores',
     description: `A way to manage household responsibilities. Assign tasks, track progress, and motivate everyone with a point-based reward system.`,
     image: '',
     demoLink: '',
-    detailsLink: '#',
+    slug: 'score-my-chores',
   },
 ];
 
@@ -26,7 +27,7 @@ const ProjectCard = ({
   description,
   image,
   demoLink,
-  detailsLink,
+  slug,
   index,
 }) => (
   <motion.div
@@ -83,13 +84,13 @@ const ProjectCard = ({
             Live Demo (Unavailable)
           </span>
         )}
-        <a
-          href={detailsLink}
+        <Link
+          to={`/projects/${slug}`}
           className="flex items-center text-gray-400 hover:text-white transition group"
         >
           Details
           <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-0.5 transition" />
-        </a>
+        </Link>
       </div>
     </div>
   </motion.div>
