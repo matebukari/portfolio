@@ -1,26 +1,16 @@
 import { motion } from "motion/react";
-import HtmlLogo from "../../../assets/techLogos/html.svg";
-import CssLogo from "../../../assets/techLogos/css.svg";
-import JavascriptLogo from "../../../assets/techLogos/javascript.svg";
-import TailwindLogo from "../../../assets/techLogos/tailwind.svg";
-import ExpressJsLogo from "../../../assets/techLogos/expressjs.svg";
-import NodeJsLogo from "../../../assets/techLogos/nodejs.svg";
-import ReactLogo from "../../../assets/techLogos/react.svg";
-import MongoDBLogo from "../../../assets/techLogos/mongodb.svg";
-import JavaLogo from "../../../assets/techLogos/java.svg";
-import GitLogo from "../../../assets/techLogos/git.svg";
 
 const techStackData = [
-  { name: 'HTML', logoSrc: HtmlLogo },
-  { name: 'CSS', logoSrc: CssLogo },
-  { name: 'JavaScript', logoSrc: JavascriptLogo },
-  { name: 'Tailwind CSS', logoSrc: TailwindLogo },
-  { name: 'Express JS', logoSrc: ExpressJsLogo },
-  { name: 'Node JS', logoSrc: NodeJsLogo },
-  { name: 'React', logoSrc: ReactLogo },
-  { name: 'MongoDB', logoSrc: MongoDBLogo },
-  { name: 'Java', logoSrc: JavaLogo },
-  { name: 'Git', logoSrc: GitLogo },
+  { name: 'HTML', logoSrc: "/techLogos/html.svg" },
+  { name: 'CSS', logoSrc: "/techLogos/css.svg" },
+  { name: 'JavaScript', logoSrc: "/techLogos/javascript.svg" },
+  { name: 'Tailwind CSS', logoSrc: "/techLogos/tailwind.svg" },
+  { name: 'Express JS', logoSrc: "/techLogos/expressjs.svg" },
+  { name: 'Node JS', logoSrc: "/techLogos/nodejs.svg" },
+  { name: 'React', logoSrc: "/techLogos/react.svg" },
+  { name: 'MongoDB', logoSrc: "/techLogos/mongodb.svg" },
+  { name: 'Java', logoSrc: "/techLogos/java.svg" },
+  { name: 'Git', logoSrc: "/techLogos/git.svg" },
 ];
 
 const LogoCard = ({ name, logoSrc, index }) => {
