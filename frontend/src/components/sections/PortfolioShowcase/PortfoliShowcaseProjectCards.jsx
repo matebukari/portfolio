@@ -1,7 +1,7 @@
 import { ExternalLink, ArrowRight, Code } from 'lucide-react';
 import { Link } from "react-router-dom";
 import { motion } from 'motion/react';
-import StreamScopeImage from '../../../assets/images/StreamScope-screenshot.png'; 
+import StreamScopeImage from "/projectScreenshots/StreamScope-screenshot.png"; 
 
 // 1. Data for the Projects Section
 const projectData = [

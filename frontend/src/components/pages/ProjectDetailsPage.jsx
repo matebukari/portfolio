@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import { ChevronLeft, Layers, Code, ExternalLink, Github } from 'lucide-react';
-import ReactLogo from "../../assets/techLogos/react.svg";
-import TailwindLogo from "../../assets/techLogos/tailwind.svg";
-import NodejsLogo from "../../assets/techLogos/nodejs.svg";
-import ExpressjsLogo from "../../assets/techLogos/expressjs.svg";
-import StreamScopeImage from '../../assets/images/StreamScope-screenshot.png';
+import ReactLogo from "/techLogos/react.svg";
+import TailwindLogo from "/techLogos/tailwind.svg";
+import NodejsLogo from "/techLogos/nodejs.svg";
+import ExpressjsLogo from "/techLogos/expressjs.svg";
+import StreamScopeImage from "/projectScreenshots/StreamScope-screenshot.png";
 
 const features = [
   {
