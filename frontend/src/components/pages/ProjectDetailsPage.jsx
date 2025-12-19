@@ -37,7 +37,7 @@ const ProjectDetailsPage = () => {
           </div>
 
           {/* Project description */}
-          <div className="text-lg text-gray-400">
+          <div className="text-lg text-gray-400 whitespace-pre-line rounded-2xl p-8 border-2 border-neutral-400/20 bg-black/1 backdrop-blur-[3px]">
             <p>{project.detailsDescription}</p>
           </div>
 
@@ -140,7 +140,7 @@ const ProjectDetailsPage = () => {
         </div>
 
         {/* Right Side */}
-        <div className="space-y-14 flex flex-col justify-center">
+        <div className="space-y-14 flex flex-col">
           {/* Project screenshot */}
           {project.screenshot?.src ? (
             <div

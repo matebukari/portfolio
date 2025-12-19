@@ -3,7 +3,7 @@
     "slug": "streamscope",
     "title": "StreamScope",
     "cardDescription": "StreamScope helps you find movies and TV shows and see exactly where they’re streaming in your country.",
-    "detailsDescription": "this is some placeholder text for streamscope project detail page",
+    "detailsDescription": "StreamScope is a web application that helps users discover movies and TV shows and see where they’re available to stream based on their country. The idea came from my own experience using VPNs to watch content that isn’t always accessible in my region, which sparked my interest in regional streaming availability.\n\nThe app detects the user’s location, supports manual country selection, and provides real-time search results with platform availability. It focuses on smooth browsing and fast interactions, including infinite scrolling, intelligent caching, and hover-based trailer previews directly on show cards.\n\nThis project is still evolving. I plan to rewrite and restructure the codebase, as I’m not fully satisfied with the current folder structure and initial loading experience. The movie and TV search API also has a monthly limit of 1,000 requests, so extended usage is restricted — hiring me might just help unlock the paid plan that supports more countries aswell 😉.",
     "demoLink": "https://stream-scope.netlify.app/",
     "githubLink": "https://github.com/matebukari/movie-site",
     "screenshot": {
@@ -19,63 +19,38 @@
     "features": [
       {
         "icon": "🎬",
-        "title": "Discover Movies & TV Shows",
-        "description": "Browse popular titles, new releases, and region-specific content with a curated limit of 102 shows per section."
+        "title": "Movie & TV Discovery",
+        "description": "Browse popular movies and TV shows with curated sections and region-specific results."
+      },
+      {
+        "icon": "📺",
+        "title": "Streaming Availability",
+        "description": "Shows exactly where each title is available to stream, including platform fallbacks."
       },
       {
         "icon": "🌍",
-        "title": "Smart Region Detection",
-        "description": "Automatically detects the user’s country via IP with safe fallbacks and persistent country selection."
+        "title": "Automatic Region Detection",
+        "description": "Detects the user’s country via IP with safe fallbacks and persistent manual selection."
       },
       {
         "icon": "🔎",
-        "title": "Powerful Search",
-        "description": "Search movies and TV shows in real time with results tailored to the selected region."
+        "title": "Real-Time Search",
+        "description": "Search movies and TV shows instantly with results tailored to the selected region."
       },
       {
         "icon": "🖱️",
-        "title": "Smooth Infinite Scrolling",
-        "description": "Loads content page-by-page as you scroll, optimized for fast scrolling and mobile performance."
+        "title": "Infinite Scrolling",
+        "description": "Loads content page-by-page as you scroll for smooth browsing and strong mobile performance."
       },
       {
         "icon": "🧠",
-        "title": "Intelligent Caching",
-        "description": "Per-country caching for Home, Popular, and New pages to minimize API calls and speed up navigation."
-      },
-      {
-        "icon": "⚡",
-        "title": "Fast Show Modals",
-        "description": "Instant-opening modals with cached data, background-loaded streaming platforms, and skeleton shimmer loaders."
-      },
-      {
-        "icon": "📺",
-        "title": "Streaming Availability",
-        "description": "Displays where each title is available to stream in the user’s region, including platform logos and fallbacks."
+        "title": "Smart Caching",
+        "description": "Uses per-country caching to reduce API calls and significantly improve navigation speed."
       },
       {
         "icon": "▶️",
-        "title": "Trailer Support",
-        "description": "Watch trailers directly from the show modal without interrupting browsing."
-      },
-      {
-        "icon": "🧠",
-        "title": "Intelligent Caching",
-        "description": "Per-country caching for Home, Popular, and New pages to minimize API calls and speed up navigation."
-      },
-      {
-        "icon": "⚡",
-        "title": "Fast Show Modals",
-        "description": "Instant-opening modals with cached data, background-loaded streaming platforms, and skeleton shimmer loaders."
-      },
-      {
-        "icon": "📺",
-        "title": "Streaming Availability",
-        "description": "Displays where each title is available to stream in the user’s region, including platform logos and fallbacks."
-      },
-      {
-        "icon": "▶️",
-        "title": "Trailer Support",
-        "description": "Watch trailers directly from the show modal without interrupting browsing."
+        "title": "Hover Trailer Preview",
+        "description": "Trailers automatically play when hovering over a show card, allowing quick previews without opening the modal."
       }
     ]
   },
@@ -83,7 +58,7 @@
     "slug": "score-my-chores",
     "title": "ScoreMyChores",
     "cardDescription": "A way to manage household responsibilities. Assign tasks, track progress, and motivate everyone with a point-based reward system.",
-    "detailsDescription": "placeholder descripton",
+    "detailsDescription": "ScoreMyChores is a planned mobile-first application designed to gamify household responsibilities by awarding points to users for completing chores and ranking them on a shared leaderboard. The goal is to make everyday tasks more engaging, fair, and transparent when living with others.\n\nThe idea for this project came from my own experience after moving back from Hungary to England and sharing a home with two other people, where keeping track of chores and contributions quickly became a real-world problem worth solving.\n\nThis project will also serve as my first step into mobile application development. I’m intentionally approaching it as a learning-focused project, with an emphasis on understanding mobile-first design, state management, and user interaction patterns while building something genuinely useful.",
     "demoLink": "",
     "githubLink": "",
     "screenshot": { "src": "", "alt": "" },
