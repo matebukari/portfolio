@@ -1,0 +1,93 @@
+[
+  {
+    "slug": "streamscope",
+    "title": "StreamScope",
+    "cardDescription": "StreamScope helps you find movies and TV shows and see exactly where they’re streaming in your country.",
+    "detailsDescription": "this is some placeholder text for streamscope project detail page",
+    "demoLink": "https://stream-scope.netlify.app/",
+    "githubLink": "https://github.com/matebukari/movie-site",
+    "screenshot": {
+      "src": "/projectScreenshots/StreamScope-screenshot.png",
+      "alt": "StreamScope screenshot"
+    },
+    "technologies": [
+      { "name": "React.js", "logo": "/techLogos/react.svg" },
+      { "name": "Tailwind CSS", "logo": "/techLogos/tailwind.svg" },
+      { "name": "Node.js", "logo": "/techLogos/nodejs.svg" },
+      { "name": "Express.js", "logo": "/techLogos/expressjs.svg" }
+    ],
+    "features": [
+      {
+        "icon": "🎬",
+        "title": "Discover Movies & TV Shows",
+        "description": "Browse popular titles, new releases, and region-specific content with a curated limit of 102 shows per section."
+      },
+      {
+        "icon": "🌍",
+        "title": "Smart Region Detection",
+        "description": "Automatically detects the user’s country via IP with safe fallbacks and persistent country selection."
+      },
+      {
+        "icon": "🔎",
+        "title": "Powerful Search",
+        "description": "Search movies and TV shows in real time with results tailored to the selected region."
+      },
+      {
+        "icon": "🖱️",
+        "title": "Smooth Infinite Scrolling",
+        "description": "Loads content page-by-page as you scroll, optimized for fast scrolling and mobile performance."
+      },
+      {
+        "icon": "🧠",
+        "title": "Intelligent Caching",
+        "description": "Per-country caching for Home, Popular, and New pages to minimize API calls and speed up navigation."
+      },
+      {
+        "icon": "⚡",
+        "title": "Fast Show Modals",
+        "description": "Instant-opening modals with cached data, background-loaded streaming platforms, and skeleton shimmer loaders."
+      },
+      {
+        "icon": "📺",
+        "title": "Streaming Availability",
+        "description": "Displays where each title is available to stream in the user’s region, including platform logos and fallbacks."
+      },
+      {
+        "icon": "▶️",
+        "title": "Trailer Support",
+        "description": "Watch trailers directly from the show modal without interrupting browsing."
+      },
+      {
+        "icon": "🧠",
+        "title": "Intelligent Caching",
+        "description": "Per-country caching for Home, Popular, and New pages to minimize API calls and speed up navigation."
+      },
+      {
+        "icon": "⚡",
+        "title": "Fast Show Modals",
+        "description": "Instant-opening modals with cached data, background-loaded streaming platforms, and skeleton shimmer loaders."
+      },
+      {
+        "icon": "📺",
+        "title": "Streaming Availability",
+        "description": "Displays where each title is available to stream in the user’s region, including platform logos and fallbacks."
+      },
+      {
+        "icon": "▶️",
+        "title": "Trailer Support",
+        "description": "Watch trailers directly from the show modal without interrupting browsing."
+      }
+    ]
+  },
+  {
+    "slug": "score-my-chores",
+    "title": "ScoreMyChores",
+    "cardDescription": "A way to manage household responsibilities. Assign tasks, track progress, and motivate everyone with a point-based reward system.",
+    "detailsDescription": "placeholder descripton",
+    "demoLink": "",
+    "githubLink": "",
+    "screenshot": { "src": "", "alt": "" },
+    "technologies": [],
+    "features": []
+  }
+]
