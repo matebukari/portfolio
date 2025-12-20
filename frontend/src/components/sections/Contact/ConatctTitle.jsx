@@ -4,7 +4,7 @@ const ContactTitle = () => {
   
   return (
     <motion.h2
-      className="text-7xl font-extrabold mb-10 pb-2 text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-blue-400"
+      className="text-5xl sm:text-6xl md:text-7xl whitespace-normal break-normal hyphens-none font-extrabold mb-10 pb-2 text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-blue-400"
       initial={{ y: -80, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{
