@@ -1,4 +1,4 @@
-import { Send } from 'lucide-react';
+import { Send, Loader2 } from 'lucide-react';
 import { motion } from 'motion/react';
 
 const iconVariants = {
@@ -11,7 +11,7 @@ const buttonVariants = {
   hover: { scale: 1.04 },
 };
 
-const ContactFormSendButton = () => {
+const ContactFormSendButton = ({ disabled = false, isSending = false }) => {
   return (
     <motion.button
       type="submit"
@@ -20,18 +20,24 @@ const ContactFormSendButton = () => {
       whileHover="hover"
       animate="rest"
       transition={{ type: 'spring', stiffness: 200, damping: 15 }}
-      className="w-full flex items-center justify-center space-x-3 py-4 rounded-lg font-bold text-white shadow-lg
+      disabled={disabled}
+      className={`w-full flex items-center justify-center space-x-3 py-4 rounded-lg font-bold text-white shadow-lg
                  bg-linear-to-r from-purple-600 to-indigo-600
-                 hover:from-purple-700 hover:to-indigo-700 transition-colors duration-300 hover:cursor-pointer"
+                 hover:from-purple-700 hover:to-indigo-700 transition-colors duration-300
+                 ${disabled ? "opacity-60 cursor-not-allowed" : "hover:cursor-pointer"}`}
     >
-      <motion.span
-        variants={iconVariants}
-        transition={{ type: 'spring', stiffness: 260, damping: 18 }}
-      >
-        <Send className="w-5 h-5" />
-      </motion.span>
+      {isSending ? (
+        <Loader2 className="w-5 h-5 animate-spin" />
+      ) : (
+        <motion.span
+          variants={iconVariants}
+          transition={{ type: "spring", stiffness: 260, damping: 18 }}
+        >
+          <Send className="w-5 h-5" />
+        </motion.span>
+      )}
 
-      <span>Send Message</span>
+      <span>{isSending ? "Sending..." : "Send Message"}</span>
     </motion.button>
   );
 };
