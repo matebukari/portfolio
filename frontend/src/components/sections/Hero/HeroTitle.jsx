@@ -76,7 +76,8 @@ const HeroTitle = ({
           ease: "easeOut",
         }}
       ref={rootRef}
-      className={`font-extrabold text-7xl ${className}`}
+      className={`font-extrabold text-5xl sm:text-6xl md:text-7xl
+        whitespace-normal break-normal hyphens-none ${className}`}
       style={style}
     >
       <p>Full Stack Developer</p>
