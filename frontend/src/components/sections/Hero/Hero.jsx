@@ -9,7 +9,12 @@ import HeroAnimation from './HeroAnimation';
 
 const Hero = () => {
   return (
-    <section id='home' className="relative h-screen flex items-center justify-center p-4 pt-[calc(7rem+env(safe-area-inset-top))] md:pt-0 overflow-hidden text-white ">
+    <section id='home' className="
+      relative min-h-svh md:min-h-screen
+      flex items-start md:items-center justify-center
+      p-4 overflow-hidden text-white
+      md:pt-0
+    ">
 
       <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 py-20">
         {/* Left Content Area */}
