@@ -18,7 +18,8 @@ export default function Navbar() {
         z-20 rounded-xl overflow-hidden
         bg-black/10 backdrop-blur-[3px] border border-neutral-400/20
         transition-all duration-300
-        ${scrolled ? "w-3/5" : "w-5/6"}
+        w-5/6
+        md:${scrolled ? "w-3/5" : "w-5/6"}
       `}
     >
       <div className="relative w-full px-6 h-16 flex items-center justify-center">
