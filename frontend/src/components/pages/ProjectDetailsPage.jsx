@@ -32,7 +32,7 @@ const ProjectDetailsPage = () => {
         <div className="space-y-14">
 
           {/* Project name */}
-          <div className="font-extrabold text-7xl text-amber-50">
+          <div className="font-extrabold text-4xl sm:text-5xl md:text-7xl text-amber-50 wrap-break-word">
             <h1>{project.title}</h1>
           </div>
 
@@ -144,7 +144,8 @@ const ProjectDetailsPage = () => {
           {/* Project screenshot */}
           {project.screenshot?.src ? (
             <div
-              className="group h-80 w-full items-center rounded-2xl overflow-hidden
+              className="group w-full items-center rounded-2xl overflow-hidden
+                h-56 sm:h-64 md:h-80
                 border-2 border-neutral-400/20 hover:border-neutral-400/40
                 hover:shadow-[0_0_0_1px_rgba(163,163,163,0.4)] transition-all duration-300"
             >
