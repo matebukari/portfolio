@@ -7,7 +7,7 @@ import ProjectStats from "./projectDetails/ProjectStats";
 import ProjectLinks from "./projectDetails/ProjectLinks";
 import ProjectTechnologies from "./projectDetails/ProjectTechnologies";
 import ProjectScreenshot from "./projectDetails/ProjectScreenshot";
-import ProjectFeatures from "./projectDetails/projectFeatures";
+import ProjectFeatures from "./projectDetails/ProjectFeatures";
 
 const ProjectDetailsPage = () => {
   const navigate = useNavigate();
