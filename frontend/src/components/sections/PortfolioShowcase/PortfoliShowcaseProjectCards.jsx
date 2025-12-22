@@ -5,11 +5,11 @@ import projects from "../../../data/projects.json";
 
 const ProjectCard = ({ title, description, image, demoLink, slug, index }) => (
   <motion.div
-    initial={{ x: index % 2 === 0 ? -60 : 60, opacity: 0 }}
+    initial={{ x: index % 2 === 0 ? -24 : 24, opacity: 0 }}
     whileInView={{ x: 0, opacity: 1 }}
     viewport={{ once: false, amount: 0.2 }}
     transition={{ type: "tween", duration: 0.5, ease: "easeOut" }}
-    className="text-left will-change-transform flex flex-col md:flex-row bg-black/10 backdrop-blur-[3px] border border-neutral-400/20 rounded-xl overflow-hidden transition duration-300 hover:scale-[1.02] hover:bg-gray-800/50 hover:shadow-lg"
+    className="text-left will-change-transform flex flex-col md:flex-row bg-black/70 md:bg-black/10 md:backdrop-blur-[3px] border border-neutral-400/20 rounded-xl overflow-hidden transition duration-300 hover:scale-[1.02] hover:bg-gray-800/50 hover:shadow-lg"
   >
     {/* Image */}
     <div className="h-48 md:w-64 md:h-auto overflow-hidden shrink-0">
