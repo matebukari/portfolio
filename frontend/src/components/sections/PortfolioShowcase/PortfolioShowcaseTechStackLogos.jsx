@@ -20,12 +20,18 @@ const LogoCard = ({ name, logoSrc, index }) => {
       whileInView={{ scale: 1, opacity: 1 }}
       viewport={{ once: false, amount: 0.2 }}
       transition={{
-        type: "spring",
-        stiffness: 120,
-        damping: 12,
+        type: "tween",
+        duration: 0.35,
+        ease: "easeOut",
         delay: index * 0.02,
       }}
-      className="will-change-transform flex flex-col items-center justify-center p-4 rounded-xl transition duration-300 hover:scale-[1.05] group"
+      whileHover={{ scale: 1.05 }}
+      style={{
+        transform: "translateZ(0)",
+        backfaceVisibility: "hidden",
+        WebkitBackfaceVisibility: "hidden",
+      }}
+      className="will-change-transform flex flex-col items-center justify-center p-4 rounded-xl"
     >
       {/* Box with backlight on hover */}
       <div className="relative w-28 h-32 rounded-2xl flex items-center justify-center">
@@ -41,7 +47,7 @@ const LogoCard = ({ name, logoSrc, index }) => {
                         bg-black/10 backdrop-blur-[3px] shadow-2xl bg-opacity-90 border border-neutral-400/50
                         group-hover:border-purple-500/80 transition duration-200">
           <img src={logoSrc} alt={`${name} logo`} className="w-14 h-14 object-contain filter drop-shadow-lg " />
-          <p className="text-sm font-semibold text-gray-300 group-hover:text-white transition duration-200">
+          <p className="text-sm font-semibold text-gray-300 group-hover:text-white transition-colors duration-200">
             {name}
           </p>
         </div>
