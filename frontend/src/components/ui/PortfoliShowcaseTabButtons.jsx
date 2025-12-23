@@ -27,7 +27,14 @@ const PortfolioShowcaseTabButtons = ({ activeTab, onTabChange }) => {
               duration: 0.35,
               ease: 'easeOut',
             }}
-            className={`flex items-center px-8 py-3 font-medium rounded-lg transition duration-300 will-change-transform
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.98 }}
+            style={{
+              transform: "translateZ(0)",
+              backfaceVisibility: "hidden",
+              WebkitBackfaceVisibility: "hidden",
+            }}
+            className={`flex items-center px-8 py-3 font-medium rounded-lg transition-colors duration-300 will-change-transform
               ${
                 isActive
                   ? 'bg-purple-900/70 text-white border border-purple-600 shadow-xl'
