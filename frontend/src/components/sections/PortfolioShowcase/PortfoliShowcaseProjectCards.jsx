@@ -11,13 +11,15 @@ const ProjectCard = ({ title, description, image, demoLink, slug, index }) => (
     transition={{ type: "tween", duration: 0.5, ease: "easeOut" }}
     whileHover={{
       scale: 1.02,
+      backgroundColor: 'rgba(31,41,55,0.5)'
     }}
     style={{
       transform: "translateZ(0)",
       backfaceVisibility: "hidden",
       WebkitBackfaceVisibility: "hidden",
+      backgroundColor: 'rgba(0,0,0,0.1)'
     }}
-    className="text-left flex flex-col md:flex-row bg-black/70 md:bg-black/10 md:backdrop-blur-[3px] border border-neutral-400/20 rounded-xl overflow-hidden hover:bg-gray-800/50 hover:shadow-lg"
+    className="text-left flex flex-col md:flex-row md:backdrop-blur-[3px] border border-neutral-400/20 rounded-xl overflow-hidden hover:shadow-lg"
   >
     {/* Image */}
     <div className="h-48 md:w-64 md:h-auto overflow-hidden shrink-0">

@@ -17,7 +17,8 @@ const PortfolioShowcaseDescription = () => {
 
   return (
     <motion.div 
-      className="mb-12 rounded-xl bg-black/10 backdrop-blur-[3px] border border-neutral-400/20"
+      className="mb-12 rounded-xl backdrop-blur-[3px] border border-neutral-400/20"
+      style={{ backgroundColor: 'rgba(0,0,0,0.1)' }}
       variants={descriptionVariants}
       initial="hidden"
       whileInView="visible"

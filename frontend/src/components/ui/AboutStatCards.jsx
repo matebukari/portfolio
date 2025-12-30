@@ -39,7 +39,8 @@ const AboutStatCards = () => {
             scale: 1.02,
             backgroundColor: "rgba(31,41,55,0.5)",
           }}
-          className="relative bg-black/10 backdrop-blur-[3px] border border-neutral-400/20 p-6 rounded-xl shadow-2xl cursor-pointer w-full md:w-[30%] will-change-transform transition-colors duration-300"
+          style={{ backgroundColor: 'rgba(0,0,0,0.1)' }}
+          className="relative backdrop-blur-[3px] border border-neutral-400/20 p-6 rounded-xl shadow-2xl cursor-pointer w-full md:w-[30%] will-change-transform transition-colors duration-300"
         >
           <div className="flex items-start justify-between">
             <stat.icon className="text-purple-400 w-8 h-8" />
