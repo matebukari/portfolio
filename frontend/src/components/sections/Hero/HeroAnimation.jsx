@@ -1,15 +1,6 @@
-import Lottie from 'react-lottie';
+import { Player } from '@lottiefiles/react-lottie-player';
 import { motion } from 'motion/react';
 import animationData from '../../../assets/animations/HeroAnimation.json';
-
-const defaultOptions = {
-  loop: true,
-  autoplay: true,
-  animationData,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice"
-  }
-};
 
 const HeroAnimation = () => {
   return (
@@ -22,7 +13,12 @@ const HeroAnimation = () => {
         damping: 15
       }}
     >
-      <Lottie options={defaultOptions} />
+      <Player
+        autoplay
+        loop
+        src={animationData}
+        style={{ width: '100%', height: '100%' }}
+      />
     </motion.div>
   );
 };
